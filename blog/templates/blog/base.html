@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vanya's blog</title>
+    </head>
+    <body>
+        {% block header %}
+        <div class="page-header">
+            {% if request.user.is_authenticated %}
+                <a href="{% url 'logout' %}" class="top-menu"><span class="glyphicon glyphicon-log-out"></span>></a>
+                <a href="{% url 'blog:post_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span>></a>
+            {% else %}
+                <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-log-in"></span>></a>
+            {% endif %}
+            <h1><a href="/">Home</a></h1>
+        </div>
+        {% endblock %}
+        <div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
