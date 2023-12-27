@@ -1,0 +1,36 @@
+body { 
+	background-color: #8FBC8F;
+}
+
+h1 a {
+	font-weight: bold;
+	font-size: 40px;
+	color: #FFFAF0;
+}
+
+h2 a {
+	font-weight: bold;
+	font-size: 40px;
+	fontcolor: #000000;
+	background-color: #FFFAF0;
+}
+
+p {
+	font-size: 15px;
+	color: 	#000000;
+}
+
+p2 {
+	font-size: 18px;
+	color: 	#000000;
+}
+
+p3 {
+	font-size: 13px;
+	color: 	#000000;
+}
+
+a {
+	font-size: 20px;
+	color: 	#000000;
+}
